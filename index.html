@@ -192,6 +192,44 @@
       color: white;
     }
 
+    /* CONTACT SECTION */
+    section.contact {
+      background: #1a472a;
+      color: white;
+      padding: 4rem 2rem;
+      margin-top: 4rem;
+      text-align: center;
+    }
+
+    .contact-content h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #ffc107;
+    }
+
+    .contact-content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: #ddd;
+    }
+
+    .whatsapp-link {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s;
+      font-size: 1.1rem;
+    }
+
+    .whatsapp-link:hover {
+      background: #20BA5A;
+      transform: translateY(-2px);
+    }
+
     @media (max-width: 768px) {
       nav {
         flex-direction: column;
@@ -217,6 +255,10 @@
       .step-arrow {
         transform: rotate(90deg);
       }
+
+      .contact-content h2 {
+        font-size: 1.8rem;
+      }
     }
   </style>
 </head>
@@ -231,12 +273,12 @@
       <li><a href="#como-funciona">¿Cómo funciona?</a></li>
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#contacto">Contacto</a></li>
-      <li><a href="#vender" class="btn-vender">Vender USD</a></li>
+      <li><a href="https://wa.me/56967658939?text=Hola%20DolarExpress%20quiero%20vender%20USD" class="btn-vender" target="_blank">Vender USD</a></li>
     </ul>
   </nav>
 
   <!-- HERO SECTION -->
-  <section class="hero">
+  <section class="hero" id="inicio">
     <div class="hero-content">
       <!-- STEPS -->
       <div class="steps">
@@ -273,8 +315,17 @@
       <!-- BUTTONS -->
       <div class="cta-buttons">
         <a href="#contacto" class="btn btn-primary">Contáctanos</a>
-        <a href="#vender" class="btn btn-secondary">Vender USD</a>
+        <a href="https://wa.me/56967658939?text=Hola%20DolarExpress%20quiero%20vender%20USD" class="btn btn-secondary" target="_blank">Vender USD</a>
       </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contacto">
+    <div class="contact-content">
+      <h2>¿Listo para vender tus dólares?</h2>
+      <p>Contáctanos por WhatsApp y te ayudaremos a transformar tu cupo en pesos al instante.</p>
+      <a href="https://wa.me/56967658939?text=Hola%20DolarExpress%20quiero%20vender%20USD" class="whatsapp-link" target="_blank">💱 Vender USD por WhatsApp</a>
     </div>
   </section>
 </body>
