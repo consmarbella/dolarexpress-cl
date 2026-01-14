@@ -1,26 +1,41 @@
 import { MetadataRoute } from 'next';
-import seoData from '@/lib/seo-pages-data.json';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://dolarexpress-cl.vercel.app';
-
-  // Homepage
-  const homepage: MetadataRoute.Sitemap = [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
-      priority: 1,
-    },
+  const baseUrl = 'https://www.dolarexpress.cl';
+  
+  // LISTA HARDCODED PARA ASEGURAR QUE SE VEA
+  const banks = [
+    "vender-cupo-banco-falabella-cmr",
+    "cambiar-cupo-tarjeta-cencosud-scotiabank",
+    "avance-efectivo-tarjeta-ripley",
+    "vender-cupo-tarjeta-lider-bci",
+    "cambio-cupo-dolar-abcvisa",
+    "vender-cupo-tarjeta-hites",
+    "avance-efectivo-tarjeta-la-polar",
+    "vender-cupo-tarjeta-cruz-verde",
+    "vender-cupo-banco-estado",
+    "cambiar-cupo-dolar-banco-chile",
+    "vender-cupo-banco-santander",
+    "avance-cupo-scotiabank",
+    "vender-cupo-bci",
+    "cambiar-cupo-itau",
+    "vender-cupo-banco-security",
+    "cambio-cupo-banco-bice",
+    "vender-cupo-banco-edwards",
+    "avance-efectivo-coopeuch",
+    "vender-cupo-banco-consorcio",
+    "cambiar-cupo-banco-internacional"
   ];
 
-  // Dynamic pages from SEO data
-  const dynamicPages: MetadataRoute.Sitemap = seoData.map((page) => ({
-    url: `${baseUrl}/convertir/${page.slug}`,
+  const dynamicRoutes = banks.map((slug) => ({
+    url: `${baseUrl}/convertir/${slug}`,
     lastModified: new Date(),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
+    changeFrequency: 'daily' as const,
+    priority: 0.9,
   }));
 
-  return [...homepage, ...dynamicPages];
+  return [
+    { url: baseUrl, lastModified: new Date(), priority: 1 },
+    ...dynamicRoutes,
+  ];
 }
