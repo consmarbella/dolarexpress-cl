@@ -1,4 +1,4 @@
-next.config.js/** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -9,5 +9,4 @@ const nextConfig = {
   // Configure static file handling
   staticPageGenerationTimeout: 60,
 };
-
 module.exports = nextConfig;
