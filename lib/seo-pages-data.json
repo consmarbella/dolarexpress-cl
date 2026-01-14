@@ -1,5 +1,4 @@
 [
-  // RETAIL (Son los que más buscan cupo)
   { "slug": "vender-cupo-banco-falabella-cmr", "title": "Vender Cupo Banco Falabella CMR", "bankName": "Banco Falabella", "cardType": "CMR" },
   { "slug": "cambiar-cupo-tarjeta-cencosud-scotiabank", "title": "Cambiar Cupo Tarjeta Cencosud Scotiabank", "bankName": "Cencosud", "cardType": "Scotiabank" },
   { "slug": "avance-efectivo-tarjeta-ripley", "title": "Avance Efectivo Tarjeta Banco Ripley", "bankName": "Banco Ripley", "cardType": "Mastercard" },
@@ -9,7 +8,6 @@
   { "slug": "avance-efectivo-tarjeta-la-polar", "title": "Avance Efectivo Tarjeta La Polar", "bankName": "La Polar", "cardType": "Visa" },
   { "slug": "vender-cupo-tarjeta-cruz-verde", "title": "Vender Cupo Tarjeta Cruz Verde", "bankName": "Cruz Verde", "cardType": "Visa" },
 
-  // BANCOS TRADICIONALES (Los más grandes)
   { "slug": "vender-cupo-banco-estado", "title": "Vender Cupo Internacional BancoEstado", "bankName": "BancoEstado", "cardType": "Visa/Mastercard" },
   { "slug": "cambiar-cupo-dolar-banco-chile", "title": "Cambiar Cupo Dólar Banco de Chile", "bankName": "Banco de Chile", "cardType": "Visa/Mastercard" },
   { "slug": "vender-cupo-banco-santander", "title": "Vender Cupo Banco Santander", "bankName": "Banco Santander", "cardType": "Visa/Mastercard" },
@@ -17,7 +15,6 @@
   { "slug": "vender-cupo-bci", "title": "Vender Cupo Banco Bci", "bankName": "Bci", "cardType": "Visa/Mastercard" },
   { "slug": "cambiar-cupo-itau", "title": "Cambiar Cupo Banco Itaú", "bankName": "Itaú", "cardType": "Visa/Mastercard" },
 
-  // BANCOS DE NICHO (Clientes con cupos altos)
   { "slug": "vender-cupo-banco-security", "title": "Vender Cupo Banco Security", "bankName": "Banco Security", "cardType": "Mastercard Black" },
   { "slug": "cambio-cupo-banco-bice", "title": "Cambio Cupo Banco Bice", "bankName": "Banco Bice", "cardType": "Visa Infinite" },
   { "slug": "vender-cupo-banco-edwards", "title": "Vender Cupo Banco Edwards", "bankName": "Banco Edwards", "cardType": "Visa/Mastercard" },
