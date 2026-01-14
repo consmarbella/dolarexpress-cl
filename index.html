@@ -23,7 +23,92 @@
             color: var(--text-dark);
             line-height: 1.6;
         }
-        
+
+          /* Navbar Styles */
+  .navbar {
+    background: linear-gradient(135deg, var(--secondary) 0%, #1A252F 100%);
+    border-bottom: 3px solid var(--primary);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .nav-brand h1 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .brand-dollar { color: var(--primary); }
+  .brand-express { color: white; }
+
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+
+  .nav-menu li { margin: 0; }
+
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.25rem;
+    display: block;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+    font-size: 0.95rem;
+  }
+
+  .nav-menu a:hover { background: rgba(245, 166, 35, 0.2); color: var(--primary); }
+
+  .nav-menu .btn-empresas {
+    background: var(--primary);
+    color: var(--secondary);
+    font-weight: 600;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+
+  .nav-menu .btn-empresas:hover { background: var(--primary-dark); color: white; }
+
+  .nav-menu .btn-nav {
+    background: var(--primary);
+    color: var(--secondary);
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    margin-left: 0.5rem;
+  }
+
+  .nav-menu .btn-nav:hover { background: var(--primary-dark); color: white; }
+
+  .hamburger { display: none; flex-direction: column; cursor: pointer; }
+  .hamburger span { width: 25px; height: 3px; background: white; margin: 4px 0; border-radius: 3px; transition: all 0.3s ease; }
+
+  @media (max-width: 768px) {
+    .nav-menu { display: none; }
+    .hamburger { display: flex; }
+    .navbar .container { gap: 1rem; }
+  }
+
+
         header {
             background: linear-gradient(135deg, var(--secondary) 0%, #1A252F 100%);
             color: white;
@@ -266,6 +351,28 @@
     </style>
 </head>
 <body>
+      <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-brand">
+        <h1><span class="brand-dollar">Dolar</span><span class="brand-express">Express</span></h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="/empresas.html" class="btn-empresas">EMPRESAS</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="vender-usd.html" class="btn-nav">Vender USD</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
     <header>
         <div class="container">
             <div class="header-content">
