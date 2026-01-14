@@ -1,0 +1,55 @@
+{
+  "hero": {
+    "title": "Compra USD desde tu tarjeta de crédito",
+    "subtitle": "Transferencias rápidas y seguras al mejor tipo de cambio",
+    "cta": "Comenzar"
+  },
+  "features": [
+    {
+      "icon": "💳",
+      "title": "Proceso Simple",
+      "description": "Compra USD directamente desde tu tarjeta de crédito en minutos"
+    },
+    {
+      "icon": "⚡",
+      "title": "Rápido y Seguro",
+      "description": "Transacciones cifradas y procesadas al instante"
+    },
+    {
+      "icon": "📊",
+      "title": "Mejor Tipo de Cambio",
+      "description": "Cotización actualizada al mejor precio del mercado"
+    }
+  ],
+  "steps": [
+    {
+      "number": 1,
+      "title": "Ingresa tus datos",
+      "description": "Completa tu información básica de forma segura"
+    },
+    {
+      "number": 2,
+      "title": "Selecciona monto",
+      "description": "Elige la cantidad de USD que deseas comprar"
+    },
+    {
+      "number": 3,
+      "title": "Confirma tu pago",
+      "description": "Realiza el pago desde tu tarjeta de crédito"
+    }
+  ],
+  "faq": [
+    {
+      "question": "¿Qué tarjetas de crédito aceptan?",
+      "answer": "Aceptamos todas las tarjetas de crédito principales (Visa, Mastercard, American Express)"
+    },
+    {
+      "question": "¿Cuánto tiempo toma la compra?",
+      "answer": "El proceso completo toma menos de 10 minutos desde inicio hasta la confirmación"
+    },
+    {
+      "question": "¿Cuáles son las comisiones?",
+      "answer": "Tenemos comisiones competitivas. Puedes ver el desglose de costos al momento de tu compra"
+    }
+  ]
+}
