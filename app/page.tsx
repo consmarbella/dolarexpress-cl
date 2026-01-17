@@ -1,3 +1,4 @@
+// DolarExpress Main Page
 import LandingPage from '@/lib/LandingPage';
 export const metadata = {
   title: 'DolarExpress - Compra USD desde tu tarjeta de crédito',
