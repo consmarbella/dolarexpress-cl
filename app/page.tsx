@@ -1,8 +1,4 @@
-import dynamic from 'next/dynamic';
-
-const LandingPage = dynamic(() => import('@/lib/LandingPage'), {
-  ssr: false,
-});
+import LandingPage from '@/lib/LandingPage';
 
 export const metadata = {
   title: 'DolarExpress - Compra USD desde tu tarjeta de crédito',
