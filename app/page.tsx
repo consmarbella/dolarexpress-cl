@@ -1,4 +1,4 @@
-import LandingPage from '@/lib/app/LandingPage';
+import LandingPage from '@/lib/LandingPage';
 export const metadata = {
   title: 'DolarExpress - Compra USD desde tu tarjeta de crédito',
   description: 'Compra USD de forma rápida y segura desde tu tarjeta de crédito al mejor tipo de cambio',
